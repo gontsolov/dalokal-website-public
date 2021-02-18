@@ -1,5 +1,12 @@
 
-/*RESETS*/
+/*TABLE OF CONTENTS*/
+/*  1. RESETS
+    2. VARIABLES
+    3. MAIN
+*/
+
+
+/*--------------RESETS---------------*/
 
 * {
   box-sizing: border-box;
@@ -19,15 +26,18 @@ h1, h2, h3 {
   padding: 0;
 }
 
-/*VARIABLES*/
+/*--------------VARIABLES---------------*/
 
 :root {
   /*COLORS*/
   --col-primary-green: #66D836;
   --col-secondary-black: #414141;
   --col-third-grey: #6F6F6F;
+  --col-white: #FFF;
 
   /*FONT FAMILIES*/
-  --ff-primary: SF Pro Display, Arial
+  --ff-primary: SF Pro Display, Arial;
 
 }
+
+/*--------------VARIABLES---------------*/
