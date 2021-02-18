@@ -1,3 +1,6 @@
+
+/*RESETS*/
+
 * {
   box-sizing: border-box;
 }
@@ -9,4 +12,22 @@ html, body {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*VARIABLES*/
+
+:root {
+  /*COLORS*/
+  --col-primary-green: #66D836;
+  --col-secondary-black: #414141;
+  --col-third-grey: #6F6F6F;
+
+  /*FONT FAMILIES*/
+  --ff-primary: SF Pro Display, Arial
+
 }
