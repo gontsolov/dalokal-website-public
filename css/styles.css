@@ -71,6 +71,7 @@ h2 {
   font-size: 1.5rem;
   text-align: center;
   max-width: 50ch;
+  margin: 3rem 0 1rem;
 }
 
 ul {
@@ -109,18 +110,33 @@ li {
   visibility: hidden;
 }
 
+.image {
+  width: 20rem;
+  margin: 0 auto;
+}
 .small-text {
   font-size: 0.7rem;
   color: var(--col-third-grey);
-  margin: 0;
-}
-
-.step {
-
+  margin: 0.5rem 0;
 }
 
 .steps {
+  background-color: var(--col-primary-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem;
+}
 
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step p{
+  color: white;
 }
 
 .download {
@@ -171,7 +187,9 @@ li {
 }
 
 .flex {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*HOVER*/
