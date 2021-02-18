@@ -1,10 +1,8 @@
-
 /*TABLE OF CONTENTS*/
 /*  1. RESETS
     2. VARIABLES
     3. MAIN
 */
-
 
 /*--------------RESETS---------------*/
 
@@ -12,8 +10,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
+  line-height: 1.5;
   padding: 0;
 }
 
@@ -21,7 +21,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -30,28 +32,65 @@ h1, h2, h3 {
 
 :root {
   /*COLORS*/
-  --col-primary-green: #66D836;
+  --col-primary-green: #66d836;
   --col-secondary-black: #414141;
-  --col-third-grey: #6F6F6F;
-  --col-white: #FFF;
+  --col-third-grey: #6f6f6f;
+  --col-white: #fff;
 
   /*FONT FAMILIES*/
   --ff-primary: SF Pro Display, Arial;
-
 }
 
 /*--------------MAIN---------------*/
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  font-family: var(--ff-primary);
+  color: var(--col-secondary-black);
+}
+
+p {
+  max-width: 70ch;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 0 1.3rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  padding: 16px 24px;
+  background-color: var(--col-primary-green);
+  border-radius: 20px;
+}
+
+.small-text {
+
+}
 
 .step {
-
 }
 
 .steps {
-
-
 }
 
 .flex {
-
-
 }
