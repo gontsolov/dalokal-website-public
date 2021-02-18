@@ -13,7 +13,6 @@
 html,
 body {
   margin: 0;
-  line-height: 1.5;
   padding: 0;
 }
 
@@ -55,10 +54,12 @@ p {
 p {
   max-width: 70ch;
   font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
+  text-align: center;
 }
 
 ul {
@@ -76,14 +77,17 @@ li {
   flex-direction: row;
 }
 
+.green {
+  color: var(--col-primary-green);
+}
+
 .button {
   padding: 16px 24px;
   background-color: var(--col-primary-green);
-  border-radius: 20px;
+  border-radius: 0.5rem;
 }
 
 .small-text {
-
 }
 
 .step {
@@ -93,4 +97,12 @@ li {
 }
 
 .flex {
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 400px) {
+  h1, h2, h3 {
+    text-align: left;
+  }
 }
