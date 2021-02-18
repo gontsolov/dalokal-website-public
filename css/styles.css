@@ -41,6 +41,7 @@ h3 {
 }
 
 /*--------------MAIN---------------*/
+
 h1,
 h2,
 h3,
@@ -99,10 +100,32 @@ li {
 .flex {
 }
 
+/*HOVER*/
+
+.button:hover {
+
+}
+
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 400px) {
+/*Tablet*/
+@media screen and (min-width: 480px) {
   h1, h2, h3 {
     text-align: left;
   }
+}
+
+/*Laptop*/
+@media screen and (min-width: 768px) {
+
+}
+
+/*Desktops*/
+@media screen and (min-width: 1025px) {
+
+}
+
+/*Large Screens*/
+@media screen and (min-width: 1200px) {
+
 }
