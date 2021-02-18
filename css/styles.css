@@ -59,11 +59,18 @@ p {
   text-align: center;
   padding: 0 2.1rem;
   margin: 1.5rem 0;
+  color: var(--col-third-grey);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 50ch;
 }
 
 ul {
@@ -98,8 +105,14 @@ li {
   line-height: 1;
 }
 
-.small-text {
+.main-image {
+  visibility: hidden;
+}
 
+.small-text {
+  font-size: 0.7rem;
+  color: var(--col-third-grey);
+  margin: 0;
 }
 
 .step {
@@ -128,6 +141,35 @@ li {
   height: 5rem;
 }
 
+.news-heading {
+  margin: 0 3rem;
+}
+
+.email-section {
+  margin: 1.5rem 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-button {
+  background-color: var(--col-primary-green);
+  color: var(--col-white);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  width: 8rem;
+  margin: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.email-input-box {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  padding: 1rem 8rem 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
 .flex {
 
 }
@@ -138,32 +180,51 @@ li {
 
 }
 
+/*FOCUS*/
+
+.email-input-box:focus {
+  outline: none !important;
+  border:1px solid var(--col-primary-green);
+}
+
 /*--------------MEDIA QUERIES---------------*/
 
 /*Tablet*/
 @media screen and (min-width: 480px) {
-  h1, h2, h3, p {
+  h1,
+  h2,
+  h3,
+  p {
     text-align: center;
   }
 }
 
 /*Laptop*/
 @media screen and (min-width: 768px) {
-  h1, h2, h3, p  {
+  h1,
+  h2,
+  h3,
+  p {
     text-align: left;
   }
 
   .download {
     flex-direction: row;
   }
+
+  .main-image {
+    visibility: visible;
+  }
+
+  .email-section {
+    flex-direction: row;
+  }
 }
 
 /*Desktops*/
 @media screen and (min-width: 1025px) {
-
 }
 
 /*Large Screens*/
 @media screen and (min-width: 1200px) {
-
 }

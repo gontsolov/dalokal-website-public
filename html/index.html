@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="main-image">
       <img src="" alt="iPhone Mockup" />
     </div>
 
@@ -90,13 +90,13 @@
       </div>
       <div>
         <img src="" alt="Salad" />
-        <p>Photo by Louis Hansel @shotsoflouis on Unsplash</p>
+        <p class="small-text">Photo by Louis Hansel @shotsoflouis on Unsplash</p>
       </div>
 
       <div class="flex">
         <div>
           <img src="" alt="Beautiful garden landscape" />
-          <p>Photo by Rufus O’Dea on Unsplash</p>
+          <p class="small-text">Photo by Rufus O’Dea on Unsplash</p>
         </div>
 
         <div>
@@ -113,10 +113,18 @@
 
     <!--Newsletter-->
     <section>
-      <h2>Want to stay up to date with the latest news?</h2>
+      <h2 class="news-heading">
+        Want to stay up to date with the latest news?
+      </h2>
       <div>
-        <div class="input-email"></div>
-        <a href="" class="button"></a>
+        <div >
+          <form class="email-section" action="" autocomplete="on">
+            <label>
+              <input class="email-input-box" type="email" placeholder="Email">
+            </label>
+            <input class="subscribe-button" type="submit" value="Subscribe">
+          </form>
+        </div>
       </div>
       <p class="small-text">
         p.s We promise to not send you more than one email per month, we don’t
@@ -124,9 +132,6 @@
       </p>
     </section>
 
-    <footer>
-
-    </footer>
-
+    <footer></footer>
   </body>
 </html>
