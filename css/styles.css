@@ -41,7 +41,7 @@ h3 {
   --ff-primary: SF Pro Display, Arial;
 }
 
-/*--------------MAIN---------------*/
+/*--------------TEXT STYLES---------------*/
 
 h1,
 h2,
@@ -84,14 +84,25 @@ li {
   cursor: pointer;
 }
 
+/*CUSTOM STYLES*/
+
+.green {
+  color: var(--col-green);
+}
+
+.apple-store {
+  height: 3.8rem;
+}
+
+.google-play {
+  margin-top: 0.3rem;
+  height: 5rem;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   width: 100vw;
-}
-
-.green {
-  color: var(--col-green);
 }
 
 .button {
@@ -115,6 +126,7 @@ li {
   width: 20rem;
   margin: 0 auto;
 }
+
 .small-text {
   font-size: 0.7rem;
   color: var(--col-grey);
@@ -139,24 +151,15 @@ li {
 .step p {
   color: white;
 }
-
 .download {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-items: center;*/
-  width: 100%;
+/*justify-items: center;*/
+width: 100%;
   margin: 2.5rem 0;
 }
 
-.apple-store {
-  height: 3.8rem;
-}
-
-.google-play {
-  margin-top: 0.3rem;
-  height: 5rem;
-}
 
 .newsletter {
   margin: 5rem 0;
@@ -203,7 +206,7 @@ li {
 /*HOVER*/
 
 .button:hover {
-
+  background-color: #51c31f;
 }
 
 .subscribe-button:hover {
