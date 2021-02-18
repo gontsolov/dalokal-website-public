@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--col-black);
 }
 
 h1,
@@ -31,9 +32,9 @@ h3 {
 
 :root {
   /*COLORS*/
-  --col-primary-green: #66d836;
-  --col-secondary-black: #414141;
-  --col-third-grey: #6f6f6f;
+  --col-green: #66d836;
+  --col-black: #414141;
+  --col-grey: #6f6f6f;
   --col-white: #fff;
 
   /*FONT FAMILIES*/
@@ -49,7 +50,7 @@ ul,
 li,
 p {
   font-family: var(--ff-primary);
-  color: var(--col-secondary-black);
+  color: var(--col-black);
 }
 
 p {
@@ -59,7 +60,7 @@ p {
   text-align: center;
   padding: 0 2.1rem;
   margin: 1.5rem 0;
-  color: var(--col-third-grey);
+  color: var(--col-grey);
 }
 
 h1 {
@@ -90,12 +91,12 @@ li {
 }
 
 .green {
-  color: var(--col-primary-green);
+  color: var(--col-green);
 }
 
 .button {
   padding: 16px 24px;
-  background-color: var(--col-primary-green);
+  background-color: var(--col-green);
   border-radius: 0.5rem;
 }
 
@@ -116,12 +117,12 @@ li {
 }
 .small-text {
   font-size: 0.7rem;
-  color: var(--col-third-grey);
+  color: var(--col-grey);
   margin: 0.5rem 0;
 }
 
 .steps {
-  background-color: var(--col-primary-green);
+  background-color: var(--col-green);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +136,7 @@ li {
   align-items: center;
 }
 
-.step p{
+.step p {
   color: white;
 }
 
@@ -157,6 +158,10 @@ li {
   height: 5rem;
 }
 
+.newsletter {
+  margin: 5rem 0;
+}
+
 .news-heading {
   margin: 0 3rem;
 }
@@ -169,7 +174,7 @@ li {
 }
 
 .subscribe-button {
-  background-color: var(--col-primary-green);
+  background-color: var(--col-green);
   color: var(--col-white);
   border-radius: 0.5rem;
   border: none;
@@ -177,13 +182,16 @@ li {
   width: 8rem;
   margin: 1rem;
   letter-spacing: 0.05em;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .email-input-box {
-  background-color: #F2F2F2;
-  border: 1px solid #F2F2F2;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
   padding: 1rem 8rem 1rem 1.5rem;
   border-radius: 0.5rem;
+  transition-duration: 0.3s;
 }
 
 .flex {
@@ -198,11 +206,15 @@ li {
 
 }
 
+.subscribe-button:hover {
+  background-color: #51c31f;
+}
+
 /*FOCUS*/
 
 .email-input-box:focus {
   outline: none !important;
-  border:1px solid var(--col-primary-green);
+  border: 1px solid var(--col-green);
 }
 
 /*--------------MEDIA QUERIES---------------*/
