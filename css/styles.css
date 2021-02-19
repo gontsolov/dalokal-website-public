@@ -118,8 +118,15 @@ li {
   line-height: 1;
 }
 
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
 .main-image {
-  visibility: hidden;
+  /* visibility: hidden; */
+  width: 16rem;
+  margin: 0 auto 2.5rem;
 }
 
 .image {
@@ -155,11 +162,10 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-/*justify-items: center;*/
-width: 100%;
+  /*justify-items: center;*/
+  width: 100%;
   margin: 2.5rem 0;
 }
-
 
 .newsletter {
   margin: 5rem 0;
