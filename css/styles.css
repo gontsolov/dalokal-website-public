@@ -86,8 +86,16 @@ li {
 
 /*CUSTOM STYLES*/
 
+.margin-top {
+  margin-top: 2rem;
+}
+
 .green {
   color: var(--col-green);
+}
+
+.white {
+  color: var(--col-white);
 }
 
 .apple-store {
@@ -109,6 +117,25 @@ li {
   padding: 16px 24px;
   background-color: var(--col-green);
   border-radius: 0.5rem;
+  color: var(--col-white);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.button a {
+  color: white;
+}
+
+.outline {
+  border: 2px solid #ffffff;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.dark {
+  color: var(--col-black);
+  border: 2px solid var(--col-black);
+  background-color: var(--col-white);
 }
 
 .main-text {
@@ -213,6 +240,15 @@ li {
 
 .button:hover {
   background-color: #51c31f;
+}
+
+.outline:hover {
+  background-color: white;
+  color: var(--col-black);
+}
+
+.outline:hover a {
+  color: var(--col-black);
 }
 
 .subscribe-button:hover {
