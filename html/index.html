@@ -15,14 +15,21 @@
     <!--// TODO: make header into burger menu-->
     <!--Header-->
     <header class="header">
-      <svg></svg>
-      <ul class="header">
+      <a href="index.html"
+        ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
+      /></a>
+      <ul class="">
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About us</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a class="button" href="#">Download</a></li>
       </ul>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </header>
 
     <div class="image-container">
@@ -96,7 +103,11 @@
         </p>
       </div>
       <div>
-        <img class="image" src="../images/pictures/salad.png" alt="Salad" />
+        <img
+          class="image pic-shadow"
+          src="../images/pictures/salad.png"
+          alt="Salad"
+        />
         <p class="small-text">
           Photo by Louis Hansel @shotsoflouis on Unsplash
         </p>
@@ -115,7 +126,7 @@
       </div>
       <div>
         <img
-          class="image"
+          class="image pic-shadow"
           src="../images/pictures/landscapegardens.png"
           alt="Beautiful garden landscape"
         />
@@ -146,5 +157,9 @@
     <!--// TODO: add footer-->
     <footer></footer>
   </body>
-  <script></script>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
 </html>

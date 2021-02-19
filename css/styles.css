@@ -51,6 +51,7 @@ li,
 p {
   font-family: var(--ff-primary);
   color: var(--col-black);
+  padding-inline-start: 0;
 }
 
 p {
@@ -77,11 +78,13 @@ h2 {
 
 ul {
   list-style: none;
+  display: none;
 }
 
 li {
   padding: 0 1.3rem;
   cursor: pointer;
+  height: auto;
 }
 
 /*CUSTOM STYLES*/
@@ -110,7 +113,11 @@ li {
 .header {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 80%;
+  height: 70px;
+  margin: 2rem auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button {
@@ -124,6 +131,7 @@ li {
 
 .button a {
   color: white;
+  font-size: 1rem;
 }
 
 .outline {
@@ -153,7 +161,7 @@ li {
 .main-image {
   /* visibility: hidden; */
   width: 16rem;
-  margin: 0 auto 2.5rem;
+  margin: 1rem auto 2rem;
 }
 
 .image {
@@ -228,6 +236,7 @@ li {
   padding: 1rem 8rem 1rem 1.5rem;
   border-radius: 0.5rem;
   transition-duration: 0.3s;
+  width: 20rem;
 }
 
 .flex {
@@ -255,11 +264,50 @@ li {
   background-color: #51c31f;
 }
 
+.pic-shadow {
+  /* filter: drop-shadow(0px 134px 192px rgba(20, 20, 20, 0.08))
+          drop-shadow(0px 61px 73px rgba(20, 20, 20, 0.0515452))
+          drop-shadow(0px 36px 42px rgba(20, 20, 20, 0.0434752))
+          drop-shadow(0px 8px 13px rgba(20, 20, 20, 0.0284548)); */
+}
+
 /*FOCUS*/
 
 .email-input-box:focus {
   outline: none !important;
   border: 1px solid var(--col-green);
+}
+
+/*BURGER MENU ICON*/
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--col-green);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -7px);
+  transform: rotate(45deg) translate(-9px, -7px);
 }
 
 /*--------------MEDIA QUERIES---------------*/
