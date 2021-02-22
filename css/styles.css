@@ -153,6 +153,19 @@ li {
   line-height: 1;
 }
 
+.main-landing {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .image-container {
   display: flex;
   align-items: center;
@@ -197,7 +210,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-items: center;*/
+  justify-items: center;
   width: 100%;
   margin: 2.5rem 0;
 }
@@ -284,6 +297,7 @@ li {
   display: inline-block;
   cursor: pointer;
   justify-self: flex-end;
+  transform: scale(0.8);
 }
 
 .bar1,
@@ -320,6 +334,12 @@ li {
   p {
     text-align: center;
   }
+
+  .download {
+    flex-direction: row;
+    justify-content: center;
+  }
+
 }
 
 /*Laptop*/
@@ -331,8 +351,31 @@ li {
     text-align: left;
   }
 
+  p {
+    padding: 0 6rem;
+
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .main-text {
+    text-align: left;
+  }
+
+
   .download {
+
+  }
+
+  .main-landing {
     flex-direction: row;
+    flex-flow: row-reverse;
   }
 
   .main-image {
@@ -341,6 +384,7 @@ li {
 
   .email-section {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
