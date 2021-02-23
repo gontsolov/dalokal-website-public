@@ -7,6 +7,7 @@
 
     <!--Link external CSS-->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles-tailwind.css">
 
     <!--Link Google Fonts-->
   </head>
@@ -36,23 +37,23 @@
     <div class="main-landing">
       <div class="image-container">
         <img
-                class="main-image"
-                src="../images/illustrations/womanholdinggroceries.svg"
-                alt="Woman holding groceries"
+          class="main-image"
+          src="../images/illustrations/womanholdinggroceries.svg"
+          alt="Woman holding groceries"
         />
       </div>
 
       <div class="main-left">
-        <h1 class="main-text">Carrots for <span class="green">everyone</span></h1>
+        <h1 class="main-text">
+          Carrots for <span class="green">everyone</span>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          assumenda blanditiis dignissimos, dolore ducimus iste laboriosam obcaecati
-          provident rem veritatis!
+          assumenda blanditiis dignissimos, dolore ducimus iste laboriosam
+          obcaecati provident rem veritatis!
         </p>
       </div>
     </div>
-
-
 
     <!--Buttons-->
     <div class="download">
@@ -77,66 +78,71 @@
 
     <!--Steps-->
     <!--// TODO: find and add illustrations above steps-->
-    <div class="steps">
-      <div class="step">
-        <img class="step-pic" src="../images/icons/Step1.svg" alt="" />
-        <p>Download the app and sign up</p>
+    <div class="container-steps">
+      <div class="steps">
+        <div class="step">
+          <img class="step-pic" src="../images/icons/Step1.svg" alt="" />
+          <p>Download the app and sign up</p>
+        </div>
+        <div class="step">
+          <img src="../images/icons/Step2.svg" alt="" />
+          <p>Explore various shops and find your desired products</p>
+        </div>
+        <div class="step">
+          <img src="../images/icons/Step3.svg" alt="" />
+          <p style="margin-bottom: 0">Complete your order and enjoy!</p>
+        </div>
       </div>
-      <div class="step">
-        <img src="../images/icons/Step2.svg" alt="" />
-        <p>Explore various shops and find your desired products</p>
-      </div>
-      <div class="step">
-        <img src="../images/icons/Step3.svg" alt="" />
-        <p style="margin-bottom: 0">Complete your order and enjoy!</p>
-      </div>
-      <button class="button outline margin-top" type="button">
+      <button class="button outline margin-top margin-bottom" type="button">
         <a href="#">Let's get started!</a>
       </button>
     </div>
 
     <!--Text section-->
-    <div class="flex">
-      <div>
-        <h2>Sample text</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-          architecto aut, autem blanditiis cupiditate deleniti distinctio,
-          eligendi fuga impedit in libero neque officiis omnis recusandae rerum,
-          sed tempora? Deleniti?
-        </p>
-      </div>
+    <section class="text-section">
       <div class="flex">
-        <img
-          class="image pic-shadow"
-          src="../images/pictures/salad.png"
-          alt="Salad"
-        />
-        <p class="small-text">
-          Photo by Louis Hansel @shotsoflouis on Unsplash
-        </p>
+        <div>
+          <h2>Sample text</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
+            architecto aut, autem blanditiis cupiditate deleniti distinctio,
+            eligendi fuga impedit in libero neque officiis omnis recusandae rerum,
+            sed tempora? Deleniti?
+          </p>
+        </div>
+        <div class="">
+          <img
+                  class="image pic-shadow"
+                  src="../images/pictures/salad.png"
+                  alt="Salad"
+          />
+          <p class="small-text">
+            Photo by Louis Hansel @shotsoflouis on Unsplash
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="flex">
-      <div>
-        <h2>Sample text</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-          ipsam iure odit tempore voluptate! Debitis dolor dolorum fugiat
-          incidunt labore magnam reiciendis! Aperiam culpa fugiat laboriosam
-          nobis qui tenetur, vitae!
-        </p>
+      <div class="flex">
+        <div>
+          <h2>Sample text</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+            ipsam iure odit tempore voluptate! Debitis dolor dolorum fugiat
+            incidunt labore magnam reiciendis! Aperiam culpa fugiat laboriosam
+            nobis qui tenetur, vitae!
+          </p>
+        </div>
+        <div>
+          <img
+                  class="image pic-shadow"
+                  src="../images/pictures/landscapegardens.png"
+                  alt="Beautiful garden landscape"
+          />
+          <p class="small-text">Photo by Rufus O’Dea on Unsplash</p>
+        </div>
       </div>
-      <div>
-        <img
-          class="image pic-shadow"
-          src="../images/pictures/landscapegardens.png"
-          alt="Beautiful garden landscape"
-        />
-        <p class="small-text">Photo by Rufus O’Dea on Unsplash</p>
-      </div>
-    </div>
+    </section>
+
 
     <!--Newsletter-->
     <section class="newsletter">
