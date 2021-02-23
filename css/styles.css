@@ -56,7 +56,7 @@ p {
 
 p {
   max-width: 70ch;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   text-align: center;
   padding: 0 2.1rem;
@@ -70,7 +70,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   text-align: center;
   max-width: 50ch;
   margin: 3rem 0 1rem;
@@ -85,6 +85,10 @@ li {
   padding: 0 1.3rem;
   cursor: pointer;
   height: auto;
+}
+
+li:last-child {
+  padding: 0 0 0 1.3rem
 }
 
 /*CUSTOM STYLES*/
@@ -157,7 +161,7 @@ li {
   display: flex;
   align-items: center;
   justify-items: center;
-  flex-direction: column;
+   flex-direction: column;
 }
 
 .main-left {
@@ -205,6 +209,8 @@ li {
 
 .step p {
   color: white;
+  padding: 0 3rem;
+
 }
 .download {
   display: flex;
@@ -335,9 +341,17 @@ li {
     text-align: center;
   }
 
+  p {
+    padding: 0 5rem;
+  }
+
   .download {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .google-play {
+    height: 5.5rem;
   }
 
 }
@@ -352,8 +366,7 @@ li {
   }
 
   p {
-    padding: 0 6rem;
-
+    padding: 0 9rem 0 0;
   }
 
   ul {
@@ -366,6 +379,7 @@ li {
 
   .main-text {
     text-align: left;
+    margin: 0;
   }
 
 
@@ -376,16 +390,35 @@ li {
   .main-landing {
     flex-direction: row;
     flex-flow: row-reverse;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .main-image {
     visibility: visible;
+    width: 23rem;
   }
 
   .email-section {
     flex-direction: row;
     justify-content: center;
   }
+
+  .steps {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .step {
+    text-align: center;
+
+  }
+
+  .step p {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
 }
 
 /*Desktops*/
