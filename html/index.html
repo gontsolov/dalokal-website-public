@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | DaLokal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Link external CSS-->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!--Link Google Fonts-->
+  </head>
+
+  <body>
+    <!--// TODO: make header into burger menu-->
+    <!--Header-->
+    <header class="header">
+      <a href="index.html"
+        ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
+      /></a>
+      <ul class="">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="button" href="#">Download</a></li>
+      </ul>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <div class="image-container">
+      <img
+        class="main-image"
+        src="../images/illustrations/womanholdinggroceries.svg"
+        alt="Woman holding groceries"
+      />
+    </div>
+
+    <!--Main landing-->
+    <h1 class="main-text">Carrots for <span class="green">everyone</span></h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+      assumenda blanditiis dignissimos, dolore ducimus iste laboriosam obcaecati
+      provident rem veritatis!
+    </p>
+
+    <!--Buttons-->
+    <div class="download">
+      <div class="apple-store">
+        <a href="#"
+          ><img
+            class="apple-store"
+            src="../images/badges/App_Store_Badge.svg"
+            alt="Download on the App store"
+        /></a>
+      </div>
+
+      <div>
+        <a href="#"
+          ><img
+            class="google-play"
+            src="../images/badges/Google_Play_Badge.png"
+            alt="Get it on Google Play"
+        /></a>
+      </div>
+    </div>
+
+    <!--// TODO: find illustration/insert mockup on the right in bigger screens-->
+
+    <!--Steps-->
+    <!--// TODO: find and add illustrations above steps-->
+    <div class="steps">
+      <div class="step">
+        <img class="step-pic" src="../images/icons/Step1.svg" alt="" />
+        <p>Download the app and sign up</p>
+      </div>
+      <div class="step">
+        <img src="../images/icons/Step2.svg" alt="" />
+        <p>Explore various shops and find your desired products</p>
+      </div>
+      <div class="step">
+        <img src="../images/icons/Step3.svg" alt="" />
+        <p style="margin-bottom: 0">Complete your order and enjoy!</p>
+      </div>
+      <button class="button outline margin-top" type="button">
+        <a href="#">Let's get started!</a>
+      </button>
+    </div>
+
+    <!--Text section-->
+    <div class="flex">
+      <div>
+        <h2>Sample text</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
+          architecto aut, autem blanditiis cupiditate deleniti distinctio,
+          eligendi fuga impedit in libero neque officiis omnis recusandae rerum,
+          sed tempora? Deleniti?
+        </p>
+      </div>
+      <div>
+        <img
+          class="image pic-shadow"
+          src="../images/pictures/salad.png"
+          alt="Salad"
+        />
+        <p class="small-text">
+          Photo by Louis Hansel @shotsoflouis on Unsplash
+        </p>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <h2>Sample text</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+          ipsam iure odit tempore voluptate! Debitis dolor dolorum fugiat
+          incidunt labore magnam reiciendis! Aperiam culpa fugiat laboriosam
+          nobis qui tenetur, vitae!
+        </p>
+      </div>
+      <div>
+        <img
+          class="image pic-shadow"
+          src="../images/pictures/landscapegardens.png"
+          alt="Beautiful garden landscape"
+        />
+        <p class="small-text">Photo by Rufus O’Dea on Unsplash</p>
+      </div>
+    </div>
+
+    <!--Newsletter-->
+    <section class="newsletter">
+      <h2 class="news-heading">
+        Want to stay up to date with the latest news?
+      </h2>
+      <div>
+        <div>
+          <form class="email-section" action="" autocomplete="on">
+            <label>
+              <input class="email-input-box" type="email" placeholder="Email" />
+            </label>
+            <input class="subscribe-button" type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+      <p class="small-text">
+        p.s We promise to not send you more than one email per month, we don’t
+        like spam either. 📬
+      </p>
+    </section>
+    <!--// TODO: add footer-->
+    <footer></footer>
+  </body>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+</html>
