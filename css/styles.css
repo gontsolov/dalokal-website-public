@@ -43,6 +43,7 @@ h3 {
 
 /*--------------TEXT STYLES---------------*/
 
+
 h1,
 h2,
 h3,
@@ -51,12 +52,11 @@ li,
 p {
   font-family: var(--ff-primary);
   color: var(--col-black);
-  padding-inline-start: 0;
 }
 
 p {
   max-width: 70ch;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
   padding: 0 2.1rem;
@@ -65,7 +65,7 @@ p {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -73,7 +73,6 @@ h2 {
   font-size: 2.4rem;
   text-align: center;
   max-width: 50ch;
-  margin: 3rem 0 1rem;
 }
 
 ul {
@@ -97,7 +96,11 @@ li:last-child {
   margin-top: 2rem;
 }
 
-.mar .green {
+.margin-top-triple {
+  margin-top: 6rem;
+}
+
+.green {
   color: var(--col-green);
 }
 
@@ -151,7 +154,7 @@ li:last-child {
 }
 
 .main-text {
-  width: 20rem;
+  width: 26rem;
   text-align: center;
   margin: 0 auto;
   line-height: 1;
@@ -182,14 +185,17 @@ li:last-child {
 }
 
 .image {
-  width: 20rem;
-  margin: 0 auto;
+  width: 85%;
+  margin: 2rem auto 0;
 }
 
 .small-text {
   font-size: 0.7rem;
   color: var(--col-grey);
-  margin: 0.5rem 0;
+  margin: 1.2rem 0;
+  text-align: center;
+  padding: 0;
+  max-width: 300px;
 }
 
 .container-steps {
@@ -198,7 +204,7 @@ li:last-child {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 2.5rem;
+  padding: 8rem 1rem;
 }
 
 .steps {
@@ -224,22 +230,28 @@ li:last-child {
   align-items: center;
   justify-items: center;
   width: 100%;
-  margin: 2.5rem 0;
+  margin: 0.5rem 0 2.5rem;
 }
 
 .newsletter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 5rem 0;
 }
 
 .news-heading {
   margin: 0 3rem;
+  width: 40rem;
+  text-align: center;
 }
 
 .email-section {
-  margin: 1.5rem 0 0.2rem;
+  margin: 3rem 0 0.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 
 .subscribe-button {
@@ -261,13 +273,37 @@ li:last-child {
   padding: 1rem 8rem 1rem 1.5rem;
   border-radius: 0.5rem;
   transition-duration: 0.3s;
-  width: 20rem;
+  width: 100%;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.flex-reverse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-flex-reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*HOVER*/
@@ -356,11 +392,11 @@ li:last-child {
   }
 
   p {
-    padding: 0 5rem;
+    padding: 0 3rem;
   }
 
   .download {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -370,7 +406,7 @@ li:last-child {
 }
 
 /*Laptop*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px /*768px*/) {
   h1,
   h2,
   h3,
@@ -379,7 +415,7 @@ li:last-child {
   }
 
   p {
-    padding: 0 9rem 0 0;
+    padding: 0 5rem 0 0;
   }
 
   ul {
@@ -396,18 +432,25 @@ li:last-child {
   }
 
   .download {
+    justify-content: flex-start;
+    margin: 0;
+    flex-direction: row;
+  }
+  
+  .apple-store, .google-play:hover {
+    cursor: pointer;
   }
 
   .main-landing {
     flex-direction: row;
     flex-flow: row-reverse;
     width: 80%;
-    margin: 0 auto;
+    margin: 6rem auto 6rem;
   }
 
   .main-image {
     visibility: visible;
-    width: 23rem;
+    width: 26rem;
   }
 
   .email-section {
@@ -433,13 +476,34 @@ li:last-child {
     flex-direction: row;
   }
 
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .image-flex {
+    align-items: flex-end;
+  }
+
+  .image-flex-reverse {
+    align-items: flex-start;
+  }
+
+  .reverse-text {
+    margin-left: 80px;
+  }
+
+  .reverse-text > p {
+    padding: 0;
+  }
+
+  .image {
+    margin: 0;
+    width: 500px;
+  }
 
 }
 
 /*Desktops*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 64em /*1025px*/) {
 }
 
-/*Large Screens*/
-@media screen and (min-width: 1200px) {
-}

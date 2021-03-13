@@ -15,7 +15,7 @@
   <body>
     <!--// TODO: make header into burger menu-->
     <!--Header-->
-    <header class="header">
+    <header class="header w-container">
       <a href="index.html"
         ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
       /></a>
@@ -34,7 +34,7 @@
     </header>
 
     <!--Main landing-->
-    <div class="main-landing">
+    <div class="main-landing w-container">
       <div class="image-container">
         <img
           class="main-image"
@@ -45,41 +45,39 @@
 
       <div class="main-left">
         <h1 class="main-text">
-          Carrots for <span class="green">everyone</span>
+          Carrots for <span class="green">everyone.</span>
         </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
           assumenda blanditiis dignissimos, dolore ducimus iste laboriosam
           obcaecati provident rem veritatis!
         </p>
-      </div>
-    </div>
+        <div class="download">
+          <div class="apple-store">
+            <a href="#"
+            ><img
+                    class="apple-store"
+                    src="../images/badges/App_Store_Badge.svg"
+                    alt="Download on the App store"
+            /></a>
+          </div>
 
-    <!--Buttons-->
-    <div class="download">
-      <div class="apple-store">
-        <a href="#"
-          ><img
-            class="apple-store"
-            src="../images/badges/App_Store_Badge.svg"
-            alt="Download on the App store"
-        /></a>
-      </div>
-
-      <div>
-        <a href="#"
-          ><img
-            class="google-play"
-            src="../images/badges/Google_Play_Badge.png"
-            alt="Get it on Google Play"
-        /></a>
+          <div>
+            <a href="#"
+            ><img
+                    class="google-play"
+                    src="../images/badges/Google_Play_Badge.png"
+                    alt="Get it on Google Play"
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
 
     <!--Steps-->
     <!--// TODO: find and add illustrations above steps-->
     <div class="container-steps">
-      <div class="steps">
+      <div class="steps w-container">
         <div class="step">
           <img class="step-pic" src="../images/icons/Step1.svg" alt="" />
           <p>Download the app and sign up</p>
@@ -99,8 +97,8 @@
     </div>
 
     <!--Text section-->
-    <section class="text-section">
-      <div class="flex">
+    <section class="text-section w-container">
+      <div class="flex margin-top-triple">
         <div>
           <h2>Sample text</h2>
           <p>
@@ -110,7 +108,7 @@
             sed tempora? Deleniti?
           </p>
         </div>
-        <div class="">
+        <div class="image-flex">
           <img
                   class="image pic-shadow"
                   src="../images/pictures/salad.png"
@@ -122,8 +120,8 @@
         </div>
       </div>
 
-      <div class="flex">
-        <div>
+      <div class="flex-reverse margin-top">
+        <div class="reverse-text">
           <h2>Sample text</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
@@ -132,7 +130,7 @@
             nobis qui tenetur, vitae!
           </p>
         </div>
-        <div>
+        <div class="image-flex-reverse">
           <img
                   class="image pic-shadow"
                   src="../images/pictures/landscapegardens.png"
@@ -145,20 +143,16 @@
 
 
     <!--Newsletter-->
-    <section class="newsletter">
+    <section class="newsletter w-container">
       <h2 class="news-heading">
         Want to stay up to date with the latest news?
       </h2>
-      <div>
-        <div>
           <form class="email-section" action="" autocomplete="on">
-            <label>
+            <label style="width: 100%; max-width: 500px;">
               <input class="email-input-box" type="email" placeholder="Email" />
             </label>
             <input class="subscribe-button" type="submit" value="Subscribe" />
           </form>
-        </div>
-      </div>
       <p class="small-text">
         p.s We promise to not send you more than one email per month, we don’t
         like spam either. 📬
