@@ -58,7 +58,7 @@ p {
 }
 
 p {
-  max-width: 70ch;
+  max-width: 50ch;
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
@@ -85,6 +85,7 @@ h3 {
 h4 {
   font-size: 1.4rem;
   text-align: center;
+  font-weight: 500;
 }
 
 ul {
@@ -101,11 +102,10 @@ li:last-child {
   padding: 0 0 0 1.3rem;
 }
 
-
 /*CUSTOM STYLES*/
 
 .margin-top {
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .margin-top-triple {
@@ -170,10 +170,10 @@ li:last-child {
 }
 
 .main-text {
-  width: 26rem;
+  /*width: 40rem;*/
   text-align: center;
   margin: 0 auto;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .main-landing {
@@ -219,7 +219,6 @@ li:last-child {
   border-bottom: 2px solid black;
   padding-bottom: 4px;
 }
-
 
 .container-steps {
   display: flex;
@@ -275,6 +274,13 @@ li:last-child {
   flex-direction: column;
   align-items: center;
   width: 80%;
+}
+
+.image-full {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-image: url("../images/pictures/crops.jpg");
 }
 
 .subscribe-button {
@@ -343,7 +349,7 @@ li:last-child {
   width: 100px;
   justify-content: center;
   border-radius: 10px;
-  padding: 1.5rem 6rem ;
+  padding: 1.5rem 6rem;
   background-color: white;
   box-shadow: 0 16px 50px rgb(0 0 0 / 7%);
   align-items: center;
@@ -353,10 +359,10 @@ li:last-child {
 
 .team-member:hover {
   box-shadow: 0px 10px 30px rgb(0 0 0 / 14%);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
 }
 
-.team-member>h4 {
+.team-member > h4 {
   margin: 1rem 0 0;
 }
 
@@ -373,49 +379,45 @@ li:last-child {
 
 /*FOOTER*/
 
-  .footer-container {
-    background-color: white;
-    padding: 6rem 0 3rem;
-  }
+.footer-container {
+  background-color: white;
+  padding: 6rem 0 3rem;
+}
 
-  .footer {
-    width: 100%;
-    height: 25vh;
-    background-color: white;
-    color: var(--col-black);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
+.footer {
+  width: 100%;
+  height: 25vh;
+  background-color: white;
+  color: var(--col-black);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 
-  .footer-heading {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10rem;
-  }
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
 
-  .footer-heading h2 {
-    margin-bottom: 2rem;
-  }
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
 
-  .footer-heading a {
-    color: var(--col-black);
-    text-decoration: none;
-    margin-bottom: 1rem;
-  }
+.footer-heading a {
+  color: var(--col-black);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
 
-  .footer-3 {
-    margin-right: 0;
-  }
+.footer-3 {
+  margin-right: 0;
+}
 
-  .logo {
-    margin: 1.5rem 10rem 0 0;
-  }
-
-
-
-
+.logo {
+  margin: 1.5rem 10rem 0 0;
+}
 
 /*HOVER*/
 
@@ -504,12 +506,21 @@ li:last-child {
   }
 
   p {
-    padding: 0 3rem;
+    /*padding: 0 3rem;*/
+  }
+
+  .main-left {
+    align-items: center;
+  }
+
+  .main-text {
+    max-width: 600px;
   }
 
   .download {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    transform: translateX(15px);
   }
 
   .google-play {
@@ -543,10 +554,15 @@ li:last-child {
     margin: 0;
   }
 
+  .main-left {
+    align-items: flex-start;
+  }
+
   .download {
     justify-content: flex-start;
     margin: 0;
     flex-direction: row;
+    transform: translateX(0px);
   }
 
   .apple-store,
@@ -558,6 +574,7 @@ li:last-child {
     flex-direction: row;
     flex-flow: row-reverse;
     width: 80%;
+    justify-content: center;
     margin: 6rem auto 6rem;
   }
 
@@ -613,6 +630,11 @@ li:last-child {
     margin: 0;
     width: 500px;
   }
+
+  .image-full {
+    height: 400px;
+  }
+
 }
 
 /*Desktops*/

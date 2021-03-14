@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Home | DaLokal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | DaLokal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!--Link external CSS-->
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/styles-tailwind.css">
+    <!--Link external CSS-->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles-tailwind.css" />
 
-  <!--Link Google Fonts-->
-</head>
+    <!--Link Google Fonts-->
+  </head>
 
-<body>
-<!--// TODO: make header into burger menu-->
-<!--Header-->
-<header class="header w-container">
-  <a href="index.html"
-  ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
-  /></a>
-  <ul class="">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about-us.html">About us</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a class="current-page" href="contact.html">Contact</a></li>
-    <li><a class="button" href="#">Download</a></li>
-  </ul>
-  <div class="container" onclick="myFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-</header>
-
-</body>
-<script>
+  <body>
+    <!--// TODO: make header into burger menu-->
+    <!--Header-->
+    <header class="header w-container">
+      <a href="index.html"
+        ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
+      /></a>
+      <ul class="">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a class="current-page" href="contact.html">Contact</a></li>
+        <li><a class="button" href="#">Download</a></li>
+      </ul>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+    <footer class="footer-container">
+      <div class="footer">
+        <div class="logo">
+          <img src="../images/logo/Logo.svg" alt="" />
+        </div>
+        <div class="footer-heading footer-1">
+          <h5>Quick links</h5>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+          <a href="#">Linkedin</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h5>Download</h5>
+          <a href="#">App Store</a>
+          <a href="#">Google Play</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h5>Social Media</h5>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
     function myFunction(x) {
-        x.classList.toggle("change");
+      x.classList.toggle("change");
     }
-</script>
+  </script>
 </html>
