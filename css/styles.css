@@ -14,6 +14,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.3;
 }
 
 a {
@@ -47,6 +48,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+a,
 ul,
 li,
 p {
@@ -70,9 +73,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   text-align: center;
   max-width: 50ch;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 h4 {
@@ -87,13 +94,13 @@ ul {
 
 li {
   padding: 0 1.3rem;
-  cursor: pointer;
   height: auto;
 }
 
 li:last-child {
   padding: 0 0 0 1.3rem;
 }
+
 
 /*CUSTOM STYLES*/
 
@@ -133,9 +140,9 @@ li:last-child {
 }
 
 .button {
-  padding: 16px 24px;
+  padding: 16px 36px;
   background-color: var(--col-green);
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   color: var(--col-white);
   transition-duration: 0.3s;
   cursor: pointer;
@@ -144,6 +151,10 @@ li:last-child {
 .button a {
   color: white;
   font-size: 1rem;
+}
+
+.button a:hover {
+  color: white;
 }
 
 .outline {
@@ -195,12 +206,12 @@ li:last-child {
 }
 
 .small-text {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--col-grey);
-  margin: 0.7rem 0;
+  margin: 0.7rem 0 0;
   text-align: center;
   padding: 0;
-  min-width: 110px;
+  min-width: 116px;
 }
 
 .current-page {
@@ -313,7 +324,7 @@ li:last-child {
 }
 
 .w-container {
-  max-width: 1080px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -332,16 +343,16 @@ li:last-child {
   width: 100px;
   justify-content: center;
   border-radius: 10px;
-  padding: 1rem 6rem ;
+  padding: 1.5rem 6rem ;
   background-color: white;
-  box-shadow: 0px 10px 20px rgb(0 0 0 / 5%);
+  box-shadow: 0 16px 50px rgb(0 0 0 / 7%);
   align-items: center;
   margin: 1rem 1.5rem;
   transition: all 300ms;
 }
 
 .team-member:hover {
-  box-shadow: 0px 10px 20px rgb(0 0 0 / 10%);
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 14%);
   transform: translateY(-2px);
 }
 
@@ -359,6 +370,52 @@ li:last-child {
   margin: 1rem auto;
   padding: 0;
 }
+
+/*FOOTER*/
+
+  .footer-container {
+    background-color: white;
+    padding: 6rem 0 3rem;
+  }
+
+  .footer {
+    width: 100%;
+    height: 25vh;
+    background-color: white;
+    color: var(--col-black);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+  }
+
+  .footer-heading h2 {
+    margin-bottom: 2rem;
+  }
+
+  .footer-heading a {
+    color: var(--col-black);
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+
+  .footer-3 {
+    margin-right: 0;
+  }
+
+  .logo {
+    margin: 1.5rem 10rem 0 0;
+  }
+
+
+
+
 
 /*HOVER*/
 
