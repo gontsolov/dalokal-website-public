@@ -165,8 +165,12 @@ li:last-child {
 
 .dark {
   color: var(--col-black);
-  border: 2px solid var(--col-black);
   background-color: var(--col-white);
+}
+
+.outline-dark {
+  background-color: white;
+  border: 2px solid var(--col-black);
 }
 
 .main-text {
@@ -357,10 +361,7 @@ li:last-child {
           0 3px 6.3px -9px rgba(0, 0, 0, 0.024),
           0 6.2px 12.9px -9px rgba(0, 0, 0, 0.03),
           0 12.8px 26.6px -9px rgba(0, 0, 0, 0.045),
-          0 35px 73px -9px rgba(0, 0, 0, 0.09)
-;
-
-
+          0 35px 73px -9px rgba(0, 0, 0, 0.09);
   align-items: center;
   margin: 1rem 1.5rem;
   transition: all 300ms;
@@ -390,6 +391,41 @@ li:last-child {
   text-align: center;
   margin: 1rem auto;
   padding: 0;
+}
+
+/*PRICING*/
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  padding: 2rem;
+  box-shadow:
+          0 1.2px 2.5px -9px rgba(0, 0, 0, 0.02),
+          0 3px 6.3px -9px rgba(0, 0, 0, 0.024),
+          0 6.2px 12.9px -9px rgba(0, 0, 0, 0.03),
+          0 12.8px 26.6px -9px rgba(0, 0, 0, 0.045),
+          0 35px 73px -9px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+.option1 {
+
+}
+
+.option2 {
+  background-color: var(--col-green);
+  color: white;
+}
+
+.option3 {
+
 }
 
 /*FOOTER*/
