@@ -7,6 +7,7 @@
 
     <!--Link external CSS-->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles-tailwind.css" />
 
     <!--Link Google Fonts-->
   </head>
@@ -14,12 +15,12 @@
   <body>
     <!--// TODO: make header into burger menu-->
     <!--Header-->
-    <header class="header">
+    <header class="header w-container">
       <a href="index.html"
         ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
       /></a>
       <ul class="">
-        <li><a href="index.html">Home</a></li>
+        <li><a class="current-page" href="index.html">Home</a></li>
         <li><a href="about-us.html">About us</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -32,130 +33,160 @@
       </div>
     </header>
 
-    <div class="image-container">
-      <img
-        class="main-image"
-        src="../images/illustrations/womanholdinggroceries.svg"
-        alt="Woman holding groceries"
-      />
-    </div>
-
     <!--Main landing-->
-    <h1 class="main-text">Carrots for <span class="green">everyone</span></h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-      assumenda blanditiis dignissimos, dolore ducimus iste laboriosam obcaecati
-      provident rem veritatis!
-    </p>
-
-    <!--Buttons-->
-    <div class="download">
-      <div class="apple-store">
-        <a href="#"
-          ><img
-            class="apple-store"
-            src="../images/badges/App_Store_Badge.svg"
-            alt="Download on the App store"
-        /></a>
+    <div class="main-landing w-container">
+      <div class="image-container">
+        <img
+          class="main-image"
+          src="../images/illustrations/womanholdinggroceries.svg"
+          alt="Woman holding groceries"
+        />
       </div>
 
-      <div>
-        <a href="#"
-          ><img
-            class="google-play"
-            src="../images/badges/Google_Play_Badge.png"
-            alt="Get it on Google Play"
-        /></a>
+      <div class="main-left">
+        <h1 class="main-text">
+          Fresh greens, <span class="green">delivered.</span>
+        </h1>
+        <p>
+          Say goodbye to buying vegetables from the supermarket and start
+          purchasing goods directly from farmers. Download the app, sign up,
+          make an order and enjoy your fresh vegetables or fruits.
+        </p>
+        <div class="download">
+          <div class="apple-store">
+            <a href="#"
+              ><img
+                class="apple-store"
+                src="../images/badges/App_Store_Badge.svg"
+                alt="Download on the App store"
+            /></a>
+          </div>
+
+          <div>
+            <a href="#"
+              ><img
+                class="google-play"
+                src="../images/badges/Google_Play_Badge.png"
+                alt="Get it on Google Play"
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!--// TODO: find illustration/insert mockup on the right in bigger screens-->
 
     <!--Steps-->
     <!--// TODO: find and add illustrations above steps-->
-    <div class="steps">
-      <div class="step">
-        <img class="step-pic" src="../images/icons/Step1.svg" alt="" />
-        <p>Download the app and sign up</p>
+    <div class="container-steps">
+      <div class="steps w-container">
+        <div class="step">
+          <img class="step-pic" src="../images/icons/Step1.svg" alt="" />
+          <p>Download the app and sign up</p>
+        </div>
+        <div class="step">
+          <img src="../images/icons/Step2.svg" alt="" />
+          <p>Explore various shops and find your desired products</p>
+        </div>
+        <div class="step">
+          <img src="../images/icons/Step3.svg" alt="" />
+          <p style="margin-bottom: 0">Complete your order and enjoy!</p>
+        </div>
       </div>
-      <div class="step">
-        <img src="../images/icons/Step2.svg" alt="" />
-        <p>Explore various shops and find your desired products</p>
-      </div>
-      <div class="step">
-        <img src="../images/icons/Step3.svg" alt="" />
-        <p style="margin-bottom: 0">Complete your order and enjoy!</p>
-      </div>
-      <button class="button outline margin-top" type="button">
+      <button class="button outline margin-top margin-bottom" type="button">
         <a href="#">Let's get started!</a>
       </button>
     </div>
 
     <!--Text section-->
-    <div class="flex">
-      <div>
-        <h2>Sample text</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-          architecto aut, autem blanditiis cupiditate deleniti distinctio,
-          eligendi fuga impedit in libero neque officiis omnis recusandae rerum,
-          sed tempora? Deleniti?
-        </p>
+    <section class="text-section w-container">
+      <div class="flex margin-top-triple">
+        <div>
+          <h2>Sample text</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
+            architecto aut, autem blanditiis cupiditate deleniti distinctio,
+            eligendi fuga impedit in libero neque officiis omnis recusandae
+            rerum, sed tempora? Deleniti?
+          </p>
+        </div>
+        <div class="image-flex">
+          <img
+            class="image pic-shadow"
+            src="../images/pictures/salad.png"
+            alt="Salad"
+          />
+          <p class="small-text">
+            Photo by Louis Hansel @shotsoflouis on Unsplash
+          </p>
+        </div>
       </div>
-      <div>
-        <img
-          class="image pic-shadow"
-          src="../images/pictures/salad.png"
-          alt="Salad"
-        />
-        <p class="small-text">
-          Photo by Louis Hansel @shotsoflouis on Unsplash
-        </p>
-      </div>
-    </div>
 
-    <div class="flex">
-      <div>
-        <h2>Sample text</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-          ipsam iure odit tempore voluptate! Debitis dolor dolorum fugiat
-          incidunt labore magnam reiciendis! Aperiam culpa fugiat laboriosam
-          nobis qui tenetur, vitae!
-        </p>
+      <div class="flex-reverse margin-top">
+        <div class="reverse-text">
+          <h2>Sample text</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+            ipsam iure odit tempore voluptate! Debitis dolor dolorum fugiat
+            incidunt labore magnam reiciendis! Aperiam culpa fugiat laboriosam
+            nobis qui tenetur, vitae!
+          </p>
+        </div>
+        <div class="image-flex-reverse">
+          <img
+            class="image pic-shadow"
+            src="../images/pictures/landscapegardens.png"
+            alt="Beautiful garden landscape"
+          />
+          <p class="small-text">Photo by Rufus O’Dea on Unsplash</p>
+        </div>
       </div>
-      <div>
-        <img
-          class="image pic-shadow"
-          src="../images/pictures/landscapegardens.png"
-          alt="Beautiful garden landscape"
-        />
-        <p class="small-text">Photo by Rufus O’Dea on Unsplash</p>
-      </div>
-    </div>
+    </section>
 
     <!--Newsletter-->
-    <section class="newsletter">
+    <section class="newsletter w-container">
       <h2 class="news-heading">
         Want to stay up to date with the latest news?
       </h2>
-      <div>
-        <div>
-          <form class="email-section" action="" autocomplete="on">
-            <label>
-              <input class="email-input-box" type="email" placeholder="Email" />
-            </label>
-            <input class="subscribe-button" type="submit" value="Subscribe" />
-          </form>
-        </div>
-      </div>
+      <form class="email-section" action="" autocomplete="on">
+        <label style="width: 100%; max-width: 400px">
+          <input class="input-box" type="email" placeholder="Email" />
+        </label>
+        <input class="subscribe-button" type="submit" value="Subscribe" />
+      </form>
       <p class="small-text">
         p.s We promise to not send you more than one email per month, we don’t
         like spam either. 📬
       </p>
     </section>
-    <!--// TODO: add footer-->
-    <footer></footer>
+
+    <!--FOOTER-->
+
+    <footer class="footer-container w-container">
+      <div class="footer">
+        <div class="logo">
+          <img src="../images/logo/Logo.svg" alt="" />
+        </div>
+        <div class="footer-heading footer-1">
+          <h5>Quick links</h5>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+          <a href="#">Linkedin</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h5>Download</h5>
+          <a href="#">App Store</a>
+          <a href="#">Google Play</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h5>Social Media</h5>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+    </footer>
   </body>
   <script>
     function myFunction(x) {

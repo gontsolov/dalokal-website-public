@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Pricing | DaLokal</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | DaLokal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<h1></h1>
+    <!--Link external CSS-->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles-tailwind.css" />
 
-</body>
+    <!--Link Google Fonts-->
+  </head>
+
+  <body>
+    <!--// TODO: make header into burger menu-->
+    <!--Header-->
+    <header class="header w-container">
+      <a href="index.html"
+        ><img src="../images/logo/Logo.svg" alt="DaLokal logo"
+      /></a>
+      <ul class="">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a class="current-page" href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="button" href="#">Download</a></li>
+      </ul>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <!--MAIN SECTION-->
+
+    <h2 class="centered-text">Pricing</h2>
+    <p class="centered-text">Want to know what the best payment plan is for you? <br> Check out our options below.</p>
+
+    <div class="w-container pricing">
+      <div class="option option1">
+        <h4 class="plan-name">Basic</h4>
+        <h3 class="price">19€<span class="month">/mo</span></h3>
+        <h4 class="features">Included features:</h4>
+        <ul class="feature-list">
+          <li>- Visible at DaLokal</li>
+          <li>- maximum of 15 messages per month (200 characters)</li>
+          <li>- Onlineshop</li>
+          <li>- 15,5% fees per sale</li>
+        </ul>
+        <a href="#" class="button dark outline-dark">Select plan</a>
+      </div>
+      <div class="option option2">
+        <div class="most-popular">
+          <p class="color-inherit most-popular-text">MOST POPULAR</p>
+        </div>
+        <h4 class="color-inherit plan-name">Premium</h4>
+        <h3 class="color-inherit price">39€<span class="month color-inherit">/mo</span></h3>
+        <h4 class=" color-inherit features">Included features:</h4>
+        <ul class="feature-list color-inherit">
+          <li class="color-inherit">- Additional information like Café, hostels, *and many more*.</li>
+          <li class="color-inherit">- maximum of 30 messages per month (200 characters)</li>
+          <li class="color-inherit">- Onlineshop</li>
+          <li class="color-inherit">- 9,5% fees per sale</li>
+        </ul>
+        <a href="#" class="button dark">Select plan</a>
+      </div>
+      <div class="option option3">
+        <h4 class="plan-name">Professional</h4>
+        <h3 class="price">29€<span class="month">/mo</span></h3>
+        <h4 class="features">Included features:</h4>
+        <ul class="feature-list">
+          <li>- Visible at DaLokal</li>
+          <li>- maximum of 15 messages per month (200 characters)</li>
+          <li>- Onlineshop</li>
+          <li>- 15,5% fees per sale</li>
+        </ul>
+        <a href="#" class="button">Select plan</a>
+      </div>
+    </div>
+
+
+    <!--FOOTER-->
+
+    <footer class="footer-container w-container">
+      <div class="footer">
+        <div class="logo">
+          <img src="../images/logo/Logo.svg" alt="" />
+        </div>
+        <div class="footer-heading footer-1">
+          <h5>Quick links</h5>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+          <a href="#">Linkedin</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h5>Download</h5>
+          <a href="#">App Store</a>
+          <a href="#">Google Play</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h5>Social Media</h5>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
 </html>
