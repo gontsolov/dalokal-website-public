@@ -29,6 +29,23 @@ h3 {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea {
+  font-family: var(--ff-primary);
+}
+::-webkit-input-placeholder {
+  font-family: var(--ff-primary);
+}
+:-moz-placeholder {
+  font-family: var(--ff-primary);
+}
+::-moz-placeholder {
+  font-family: var(--ff-primary);
+}
+:-ms-input-placeholder {
+  font-family: var(--ff-primary);
+}
+
 /*--------------VARIABLES---------------*/
 
 :root {
@@ -397,7 +414,7 @@ li:last-child {
 
 .pricing {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 4rem auto;
   justify-content: center;
   align-items: center;
@@ -416,6 +433,7 @@ li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 400px;
 }
 
 .plan-name {
@@ -434,7 +452,7 @@ li:last-child {
 
 .most-popular {
   position: absolute;
-  top: -24px;
+  top: -22px;
   padding: 0.8rem 1.5rem;
   background-color: var(--col-black);
   display: flex;
@@ -451,7 +469,7 @@ li:last-child {
 }
 
 .option1 {
-  background-color: #ebebeb;
+  background-color: #f2f2f2;
 }
 
 .option2 {
@@ -491,13 +509,25 @@ li:last-child {
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .label {
   margin: 1.2rem 0 0.5rem;
   font-family: var(--ff-primary);
+}
+
+.submit-button {
+  border: none;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.message-box {
+  resize: both;
+  height: 200px;
+  transition: none;
 }
 
 /*FOOTER*/
@@ -566,9 +596,10 @@ li:last-child {
 }
 
 .outline-dark:hover {
-  background-color: var(--col-grey);
+  background-color: var(--col-black);
   color: white;
   box-shadow: none !important;
+  cursor: pointer;
 }
 
 .outline:hover a {
@@ -659,6 +690,29 @@ li:last-child {
   .google-play {
     height: 5.5rem;
   }
+
+  .pricing {
+    flex-direction: column;
+
+  }
+
+  .option1 {
+    order: 3;
+    margin: 2rem 0;
+  }
+
+  .option2 {
+    order: 1;
+  }
+
+  .option3 {
+    order: 2;
+  }
+
+  .option {
+    margin: 1rem 0;
+  }
+
 }
 
 /*Laptop*/
@@ -768,8 +822,25 @@ li:last-child {
     height: 400px;
   }
 
-}
+  .pricing {
+    flex-direction: row;
+  }
 
-/*Desktops*/
-@media screen and (min-width: 64em /*1025px*/) {
+  /*.option {*/
+  /*  margin: 0 1rem;*/
+  /*}*/
+
+  .option1 {
+    order: 1;
+  }
+
+  .option2 {
+    order: 2;
+    margin: 0 2rem;
+  }
+
+  .option3 {
+    order: 3;
+  }
+
 }
